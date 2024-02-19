@@ -1,0 +1,35 @@
+{
+    "1": {
+        "id": 1,
+        "nom": "Chambre Standard",
+        "description": "Une chambre confortable avec vue sur les montagnes.",
+        "prix": 100,
+        "photos": [
+            "public/images/chambre1.jpg",
+            "public/images/chambre1.2.jpg",
+            "public/images/chambre1.3.jpg"
+        ]
+    },
+    "2": {
+        "id": 2,
+        "nom": "Suite de Luxe",
+        "description": "Une suite spacieuse avec un jacuzzi privé.",
+        "prix": 200,
+        "photos": [
+            "public/images/chambre2.jpg",
+            "public/images/chambre2.2.jpg",
+            "public/images/chambre2.3.jpg"
+        ]
+    },
+    "3": {
+        "id": 3,
+        "nom": "Chambre Familiale",
+        "description": "Une chambre idéale pour les familles avec enfants.",
+        "prix": 150,
+        "photos": [
+            "public/images/chambre3.jpg",
+            "public/images/chambre3.2.jpg",
+            "public/images/chambre3.3.jpg"
+        ]
+    }
+}

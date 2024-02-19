@@ -1,0 +1,223 @@
+/* theme */
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --primary: #078191;
+    --dark: #2c3e50;
+    --background-light: #ecf0f1;
+    --text-color: #444;
+    --text-color-light: #fff;
+    --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --border: 1px solid #eee;
+}
+
+/* reset */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: var(--font-family);
+    background-color: var(--background-light);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color-light);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style de l'image du logo */
+.image-logo {
+    max-width: 100px; /* Ajustez la largeur maximale de l'image selon vos besoins */
+    height: auto; /* Laissez la hauteur automatique pour conserver les proportions */
+    margin-right: 20px; /* Ajoutez une marge à droite pour l'espacement */
+}
+
+.header-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments côte à côte */
+    justify-content: flex-start;
+    margin-right: 40px;
+}
+
+.header-menu li {
+    margin: 0 20px; /* Marge entre les éléments du menu */
+    font-size: 18px; /* Augmenter la taille de la police */
+    line-height: 24px;
+}
+
+/* Style de l'élément actif dans le menu */
+.header-menu li.active a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-menu li.active a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Style de l'élément du menu au survol */
+.header-menu li a:hover {
+    color: #ff0000; /* Couleur jaune au survol */
+}
+
+.header-menu li {
+    padding:5px 15px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-color-light);
+    margin-left: 40px;
+}
+
+
+/* Style du conteneur */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style de l'en-tête */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style du paragraphe */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Style du lien */
+a {
+    color: #d4f807;
+    text-decoration: none;
+}
+
+.image-accueil{
+    max-width: auto; 
+    height: auto; 
+    margin-top: 20px; 
+}
+
+/* Style du pied de page (footer) */
+footer {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color-light);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.choix{
+
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 20px;
+
+}
+
+/* Style des liens à l'intérieur de la classe "choix" */
+.choix a {
+    color: var(--primary); /* Couleur bleue en utilisant la variable --primary définie précédemment */
+    text-decoration: none; /* Supprimer la soulignement par défaut */
+}
+
+/* Style au survol des liens à l'intérieur de la classe "choix" */
+.choix a:hover {
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+/* Style de la page Liste_chambres*/
+.container_ListeChambre{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+/* Style de l'image de la chambre */
+.image_chambre {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* Style du lien "Voir les détails" */
+.lien-detail {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #078191;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lien-detail:hover {
+    background-color: #055c75;
+}
+
+/* Style detail_chambre */
+
+.image_chambreDetail {
+    max-width: 300px; 
+    height: auto;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
